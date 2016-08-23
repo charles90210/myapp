@@ -1,0 +1,12 @@
+Nice guess, <%= @name %>,
+Your guess is: <%= params[:guess] %>
+<br>
+<%= @result %>
+<br>
+Number of Tries: <%= @num_tries %>
+<form action="try" method="get">
+  <label>Try another number between 1 and 50:</label>
+  <br>
+  <input type="text" name="guess"/>
+  <input type="submit"/>
+</form>
